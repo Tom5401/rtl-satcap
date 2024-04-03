@@ -7,7 +7,7 @@ sudo sh ./install_packages.sh
 (sleep 2; echo yes) | wxtoimg
 
 # setup predict
-wget "https://celestrak.org/NORAD/elements/gp.php?GROUP=weather&FORMAT=tle" -O predict.tle
+wget "https://celestrak.org/NORAD/elements/gp.php?GROUP=weather&FORMAT=tle" -O config/predict/predict.tle
 cp config/predict/predict.tle ~/.predict/predict.tle
 cp config/predict/predict.qth ~/.predict/predict.qth
 
