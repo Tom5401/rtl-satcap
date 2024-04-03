@@ -19,16 +19,14 @@ echo 'blacklist dvb_usb_rtl28xxu' | sudo tee --append /etc/modprobe.d/blacklist-
 cd ../..
 
 # Install packages
-cd packages
-sudo dpkg -i ./noaa-apt_1.4.1-1_amd64.deb
-sudo dpkg -i ./wxtoimg-amd64-2.11.2-beta.deb
+sudo dpkg -i ./packages/noaa-apt_1.4.1-1_amd64.deb
+sudo dpkg -i ./packages/wxtoimg-amd64-2.11.2-beta.deb
 
-sudo dpkg -i ./satdump_1.1.4_amd64.deb
+sudo dpkg -i ./packages/satdump_1.1.4_amd64.deb
 sudo apt -y -f install
-sudo dpkg -i ./satdump_1.1.4_amd64.deb
+sudo dpkg -i ./packages/satdump_1.1.4_amd64.deb
 
-sudo dpkg -i ./predict_2.2.3-4-b2_amd64.deb
+sudo dpkg -i ./packages/predict_2.2.3-4-b2_amd64.deb
 sudo apt -y -f install
-sudo dpkg -i ./predict_2.2.3-4-b2_amd64.deb
-
+sudo dpkg -i ./packages/predict_2.2.3-4-b2_amd64.deb
 
